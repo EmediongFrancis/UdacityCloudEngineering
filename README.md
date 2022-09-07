@@ -16,5 +16,3 @@ At the end of this section, you will <b>refactor monolith to microservices and d
 - Learn both the theory of using serverless technologies with the practice of developing a complex serverless application and focuses on learning by doing. You will learn advanced serverless features such as <i>implementing WebSockets and stream processing</i>.
 You will develop an Instagram-like serverless service for uploading, listing, and filtering images. You’ll build serverless REST APIs using API Gateway and AWS Lambda, a stack of serverless technologies on AWS. You will then store data in AWS DynamoDB and S3, secure your application with authentication, and deploy it to Amazon Web Services using Serverless framework.
 
-## Capstone Project
-- In the capstone project, you’ll build an application of your choice on AWS based on predefined criteria. You will define the scope of the project, come up feature list and decide which AWS services to use to meet availability and performance criteria
