@@ -1,6 +1,6 @@
 import 'source-map-support/register'
 
-// import * as AWS from 'aws-sdk'
+import * as AWS from 'aws-sdk'
 import { DocumentClient } from 'aws-sdk/clients/dynamodb'
 import * as AWSXRay from 'aws-xray-sdk'
 
@@ -9,6 +9,10 @@ import { TodoUpdate } from '../models/TodoUpdate'
 import { createLogger } from '../utils/logger'
 
 const logger = createLogger('TodosAccess')
+
+const XAWS = AWSXRAY.captureAWS(AWS)
+
+const docClient = new XAWS.DynamoDB.DocumentClient()
 
 // TODO: Implement the dataLayer logic
 export class TodosAccess {
